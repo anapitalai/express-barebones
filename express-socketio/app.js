@@ -17,4 +17,11 @@ const io=socket(server);
 //when socket connection is established btw server and client
 io.on('connection',(socket)=>{
 console.log('A connection was established',socketid);
+  
+  //listens for emmited client message
+  socket.on('task',(taskdata)=>{
+    
+    //emits data(taskdata) from the client to all connected clients
+    io.sockets.emit('task',taskdata);
+  });
 });
