@@ -17,4 +17,9 @@ btnHandle.addEventListener('',('click')=>{
 
 });
 
+//listen for events emitted frm the server containing the data-taskdata
+socket.on('task',()=>{
+   displayHandle.innerHTML +=`<li>{{taskdata.task}}</li>`;
+});
+
 
