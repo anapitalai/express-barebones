@@ -1,9 +1,9 @@
 # express-barebones
 A barebones express app
 
-Git clone to your computer.
-Initalise a git repo.
-npm intall express and socket.io.
+1.Git clone to your computer.
+2.Initalise a git repo.
+3.npm install express and socket.io.
 
 ##client 
 Make sure you bring in the socketio client library
