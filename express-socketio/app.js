@@ -16,5 +16,5 @@ const io=socket(server);
 
 //when socket connection is established btw server and client
 io.on('connection',(socket)=>{
-console.log('A connection was established');
+console.log('A connection was established',socketid);
 });
