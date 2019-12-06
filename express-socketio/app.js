@@ -15,6 +15,6 @@ app.use(express.static('public'));
 const io=socket(server);
 
 //when socket connection is established btw server and client
-io.on('connection',()=>{
+io.on('connection',(socket)=>{
 console.log('A connection was established');
 });
